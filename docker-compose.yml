@@ -56,7 +56,7 @@ services:
         networks:
             - nginx-php8-mysql8-node-redis
 
-    #redis
+    # redis
     service-redis:
         image: redis:6.2-alpine
         restart: always

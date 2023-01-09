@@ -9,7 +9,7 @@ Services below are configured for you:
 - Redis
 
 Run Docker Compose
->  docker-compose up -d --build
+> docker-compose up -d --build
 
 List containers
 > docker ps

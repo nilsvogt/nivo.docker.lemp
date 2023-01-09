@@ -15,7 +15,11 @@ RUN pecl install redis-5.3.7 \
 
 WORKDIR /var/www/app
 
+RUN touch /var/log/xdebug.log
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 #RUN curl -sS https://get.symfony.com/cli/installer | bash
 #RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+
+# EXPOSE 9000
